@@ -5,27 +5,29 @@ variable "environment" {
 
 variable "aws_region" {
   type        = string
-  description = ""
+  description = "region"
+  default = "us-east-1"
 }
 
 variable "aws_profile" {
   type        = string
-  description = ""
+  description = "profile"
+  default = "default"
 }
 
 variable "instance_ami" {
   type        = string
-  description = ""
+  description = "ami-0dfcb1ef8550277af"
 }
 
 variable "instance_type" {
   type        = string
-  description = ""
+  description = "t3.micro"
 }
 
 variable "instance_tags" {
   type        = map(string)
-  description = ""
+  description = "Meu ubuntinho"
   default = {
     Name    = "Ubuntu"
     Project = "Curso AWS com Terraform"

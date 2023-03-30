@@ -1,5 +1,5 @@
 terraform {
-  required_version = "0.14.4"
+  //required_version = "0.14.4"
 
   required_providers {
     aws = {
@@ -17,6 +17,5 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami           = var.instance_ami
   instance_type = var.instance_type
-
   tags = var.instance_tags
 }
